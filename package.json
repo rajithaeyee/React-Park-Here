@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "radium": "^0.25.1",
     "react": "^16.7.0",
+    "react-animations": "^1.0.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
+    "react-parallax": "^2.0.1",
     "react-scripts": "2.1.2"
   },
   "scripts": {
