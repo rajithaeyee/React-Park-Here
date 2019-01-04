@@ -2,3 +2,12 @@
     border-radius: 0px;
     margin:0px;
 }
+
+.customNavLink{
+    color:#9d9d9d;
+    text-decoration: none;
+}
+.customNavLink:hover{
+    color:white;
+    text-decoration: none;
+}

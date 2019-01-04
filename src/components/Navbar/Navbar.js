@@ -1,12 +1,14 @@
 import React from 'react';
 import { Navbar, NavItem, NavDropdown, MenuItem, Nav } from 'react-bootstrap';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
+
 const navbar = (props)=>{
     return(
         <Navbar inverse collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
-      <a href="#brand">Park Here</a>
+    <Link to="/">Park Here</Link>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>
@@ -30,8 +32,8 @@ const navbar = (props)=>{
       <NavItem eventKey={1} href="#">
         Link Right
       </NavItem>
-      <NavItem eventKey={2} href="#">
-        Link Right
+      <NavItem eventKey={2}>
+      <Link to="/login" className="customNavLink">Login</Link>
       </NavItem>
     </Nav>
   </Navbar.Collapse>
