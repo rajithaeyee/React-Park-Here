@@ -9,7 +9,7 @@
   }
 
   .wrap-login {
-    width: 960px;
+    width: 70%;
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
@@ -23,7 +23,13 @@
     /* padding: 177px 130px 33px 95px; */
     top: 5rem;
     position: absolute;
-    left: 16%;
+    left: 15%;
+    height:70%;
   }
-
+  
+.button{
+    width: 100%;
+    border-radius: 0px;
+    background: #10cc10;
+}
   
