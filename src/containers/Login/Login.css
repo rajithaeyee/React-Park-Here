@@ -1,0 +1,6 @@
+.login-wrapper{
+    height: 65rem;
+    width:100%;
+    background-image: linear-gradient(to right, rgb(207, 207, 91) , gold);
+    position: relative;
+}
