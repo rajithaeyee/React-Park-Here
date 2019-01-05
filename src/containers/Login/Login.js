@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Login.css';
 import LoginForm from './../../components/LoginForm/LoginForm';
+import { withRouter } from 'react-router-dom'
 
 class Login extends Component {
     constructor(props) {
@@ -13,15 +14,15 @@ class Login extends Component {
         };
     }
 
-
     loginHandler = (event) => {
         const username = this.state.username;
         const password = this.state.password;
 
         if (username === "admin" && password === "admin") {
             console.log("Login Success");
+            this.props.history.push('/dashboard')
         } else {
-            console.error("Login Failed");
+            console.log("Login Failed");
             this.setState({
                 loginError: true
             });
@@ -47,4 +48,4 @@ class Login extends Component {
         );
     }
 }
-export default Login;
+export default withRouter(Login);

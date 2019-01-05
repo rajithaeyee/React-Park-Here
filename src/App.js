@@ -3,6 +3,7 @@ import Layout from './components/Layout/Layout';
 import { Route,Switch } from 'react-router-dom';
 import MainPage from './components/MainPage/Mainpage';
 import Login from './containers/Login/Login';
+import Dashboard from './containers/Dashboard/Dashboard';
 
 class App extends Component {
   render() {
@@ -11,9 +12,9 @@ class App extends Component {
         <Switch>
         <Route path="/" exact component={MainPage} />
         <Route path="/login" component={Login} />
+        <Route path="/dashboard" component={Dashboard}/>
         </Switch>
       </Layout>
-
     );
   }
 }
