@@ -6,11 +6,12 @@
     "radium": "^0.25.1",
     "react": "^16.7.0",
     "react-animations": "^1.0.0",
-    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.7.0",
     "react-parallax": "^2.0.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.2"
+    "react-scripts": "2.1.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
   },
   "scripts": {
     "start": "react-scripts start",

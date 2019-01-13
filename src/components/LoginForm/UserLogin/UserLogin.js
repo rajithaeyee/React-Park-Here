@@ -1,10 +1,18 @@
 import React from 'react';
-import { FormGroup, FormControl, Button } from 'react-bootstrap';
-
+import { Button, Checkbox, Form } from 'semantic-ui-react'
 const userLogin = (props) => {
   return (
-    <form>
-      <FormGroup>
+    <Form>
+      <Form.Field>
+      <label>Username</label>
+      <input placeholder='First Name' onChange={props.usernameChanged} />
+      </Form.Field>
+      <Form.Field>
+      <label>Last Name</label>
+      <input type="password" placeholder='Last Name' onChange={props.passwordChanged} />
+      </Form.Field>
+      <Button type='submit' onClick={props.login}>Submit</Button>
+      {/* <FormGroup>
         <FormControl
           type="text"
           placeholder="username"
@@ -19,8 +27,8 @@ const userLogin = (props) => {
         <FormControl.Feedback />
         <br />
         <Button className="btn btn-success btn-lg button" onClick={props.login}>Login</Button>
-      </FormGroup>
-    </form>
+      </FormGroup> */}
+    </Form>
   );
 }
 export default userLogin;
