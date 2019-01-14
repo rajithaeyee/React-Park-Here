@@ -1,17 +1,26 @@
 import React from 'react';
-import {Container , Grid, Card, Icon } from 'semantic-ui-react'
+import {Card, Icon, Image } from 'semantic-ui-react'
+import img from './../../assets/images/user.png';
 
 const dashboradCard = (props) => {
     let description = "item";
     return (
-            <Card>
-                <Card.Content header='About Amy' />
-                <Card.Content description={description} />
-                <Card.Content extra>
-                    <Icon name='user' />
-                    4 Friends
-            </Card.Content>
-            </Card>
+        <Card>
+    <Image src={img} />
+    <Card.Content>
+      <Card.Header>Profile</Card.Header>
+      <Card.Meta>
+        <span className='date'>Joined in 2019</span>
+      </Card.Meta>
+      <Card.Description>User profile</Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a>
+        <Icon name='user secret' />
+        22 Friends
+      </a>
+    </Card.Content>
+  </Card>
     );
 }
 export default dashboradCard;
