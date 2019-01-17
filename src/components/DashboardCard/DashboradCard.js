@@ -8,7 +8,7 @@ const dashboradCard = (props) => {
         <Card>
     <Image src={img} />
     <Card.Content>
-      <Card.Header>Profile</Card.Header>
+      <Card.Header>{props.name}</Card.Header>
       <Card.Meta>
         <span className='date'>Joined in 2019</span>
       </Card.Meta>
