@@ -4,7 +4,7 @@ import './LoginForm.css';
 //import logo from '../../assets/images/img-01.png'
 import LoginImage from './LoginImage/LoginImage';
 import UserLogin from './UserLogin/UserLogin';
-import { Grid, Image, Container } from 'semantic-ui-react';
+import { Grid, Container } from 'semantic-ui-react';
 
 const loginForm = (props) => {
     return (

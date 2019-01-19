@@ -1,23 +1,21 @@
 import React from 'react';
-import {Card, Icon, Image } from 'semantic-ui-react'
-import img from './../../assets/images/user.png';
+import {Card, Icon, Image } from 'semantic-ui-react';
 
 const dashboradCard = (props) => {
-    let description = "item";
     return (
-        <Card>
-    <Image src={img} />
+      
+    <Card onClick={props.selected}>
+    <Image src={"/assets/images/"+props.imgUrl} />
     <Card.Content>
       <Card.Header>{props.name}</Card.Header>
       <Card.Meta>
-        <span className='date'>Joined in 2019</span>
+        <span className='date'>test</span>
       </Card.Meta>
-      <Card.Description>User profile</Card.Description>
+      <Card.Description>{props.description}</Card.Description>
     </Card.Content>
     <Card.Content extra>
       <a>
-        <Icon name='user secret' />
-        22 Friends
+        <Icon name={props.icon} />
       </a>
     </Card.Content>
   </Card>
